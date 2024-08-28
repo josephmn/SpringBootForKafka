@@ -16,7 +16,7 @@ public class SpringBootProviderApplication {
 	@Bean
 	CommandLineRunner init(KafkaTemplate<String, String> kafkaTemplate) {
 		return args -> {
-			kafkaTemplate.send("topic-message", "Hola Mundo con Kafka desde Spring Boot");
+			kafkaTemplate.send("topic-message", "Prueba final de Spring Boot con Kafka");
 		};
 	}
 
